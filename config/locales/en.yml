@@ -31,3 +31,35 @@
 
 en:
   hello: "Hello world"
+  layouts:
+    application:
+      title: " | Ruby on Rails Tutorial Sample App"
+  static_pages:
+    home:
+      title: "Home"
+      h1: "Sample App"
+      cnten1: "This is the home page for the"
+      cnten2: "Ruby on Rails Tutorial"
+      cnten3: "sample application."
+    about:
+      title: "About"
+      cnten1: "The"
+      cnten2: "Ruby on Rails Tutorial"
+      cnten3: "book"
+      cnten4: " and"
+      cnten5: " is a"
+      cnten6: " screencast series"
+      cnten7: " to teach web development with"
+      cnten8: " Ruby on Rails"
+      cnten9: ". This is the sample application for the tutorial."
+    help:
+      title: "Help"
+      cnten1: "Get help on the Ruby on Rails Tutorial at the"
+      cnten2: "Rails Tutorial help section."
+      cnten3: "To get help on this sample app, see the"
+      cnten4: "Ruby on Rails Tutorial"
+      cnten5: "book"
+    contact:
+      title: "Contact"
+      cnten1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      cnten2: "contact page"
