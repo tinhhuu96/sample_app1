@@ -34,10 +34,12 @@ en:
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
+    _footer:
+      news: "News"
   static_pages:
     home:
       title: "Home"
-      h1: "Sample App"
+      h1: "Welcome to the Sample App"
       cnten1: "This is the home page for the"
       cnten2: "Ruby on Rails Tutorial"
       cnten3: "sample application."
@@ -63,3 +65,6 @@ en:
       title: "Contact"
       cnten1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       cnten2: "contact page"
+  users:
+    new:
+      title: "Sign up"
