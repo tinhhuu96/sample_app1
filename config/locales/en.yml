@@ -31,6 +31,8 @@
 
 en:
   hello: "Hello world"
+  error_find_user: "user not find !"
+  create_user_success: "Welcome to the Sample App!"
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
@@ -68,3 +70,8 @@ en:
   users:
     new:
       title: "Sign up"
+      Confirmation: "Confirmation"
+      submit: "Create my account"
+  shared:
+    error_messages:
+      ms1: "The form contains "
