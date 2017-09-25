@@ -12,6 +12,8 @@ gem "rails", "~> 5.1.4"
 gem "bcrypt", "3.1.11"
 # Adding gen config
 gem "config"
+# Add gem jquery
+gem "jquery-rails"
 # Adding the bootstrap-sass
 gem "bootstrap-sass", "3.3.7"
 # Use sqlite3 as the database for Active Record

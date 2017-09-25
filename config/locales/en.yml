@@ -32,12 +32,16 @@
 en:
   hello: "Hello world"
   error_find_user: "user not find !"
+  error_login: "Invalid email/password combination"
   create_user_success: "Welcome to the Sample App!"
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
     _footer:
       news: "News"
+    header:
+      log_out: "Log out"
+      log_ing: "Long in"
   static_pages:
     home:
       title: "Home"
@@ -75,3 +79,8 @@ en:
   shared:
     error_messages:
       ms1: "The form contains "
+  sessions:
+    new:
+      login: "Log in"
+      new_user: "New user?"
+      sign_now: "Sign up now!"
