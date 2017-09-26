@@ -32,8 +32,13 @@
 en:
   hello: "Hello world"
   error_find_user: "user not find !"
+  pls_login: "Please log in."
+  up_profile: "Profile updated"
   error_login: "Invalid email/password combination"
   create_user_success: "Welcome to the Sample App!"
+  not_load_user: "can not load user !"
+  not_delete: "can not delete"
+  deleted: "User deleted"
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
@@ -76,6 +81,16 @@ en:
       title: "Sign up"
       Confirmation: "Confirmation"
       submit: "Create my account"
+    edit:
+      title: "Edit user"
+      h1: "Update your profile"
+      change: "change"
+      submit: "Save change"
+    index:
+      title: "All users"
+    user:
+      confirm: "You sure?"
+      delete: "Delete"
   shared:
     error_messages:
       ms1: "The form contains "
