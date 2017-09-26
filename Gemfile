@@ -12,6 +12,11 @@ gem "rails", "~> 5.1.4"
 gem "bcrypt", "3.1.11"
 # Adding gen config
 gem "config"
+# Add gem faker
+gem "faker", "1.7.3"
+# Add gem pagination
+gem "will_paginate", "3.1.5"
+gem "bootstrap-will_paginate", "1.0.0"
 # Add gem jquery
 gem "jquery-rails"
 # Adding the bootstrap-sass

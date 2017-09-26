@@ -5,3 +5,10 @@ user:
     maximum_length: 255
   password:
     minimum_length: 6
+session:
+  value_checkbox: 1
+gravatar:
+  size: 80
+  size_list: 50
+pagination:
+  page: 5

@@ -7,7 +7,8 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   has_secure_password
-  validates :password, presence: true, length: {minimum: Settings.user.password.minimum_length}
+  validates :password, presence: true, length: {minimum: Settings.user.password.minimum_length}, allow_nil: true
+  scope :sort_by_name, ->{order :name}
   class << self
     def digest string
       cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
@@ -20,7 +21,7 @@ class User < ApplicationRecord
   end
   def remember
     self.remember_token = User.new_token
-    update_attributes(:remember_digest, User.digest(remember_token))
+    update_attributes(remember_digest: User.digest(remember_token))
   end
 
   def authenticated? remember_token
@@ -29,6 +30,6 @@ class User < ApplicationRecord
   end
 
   def forget
-    update_attributes(:remember_digest, nil)
+    update_attributes remember_digest: nil
   end
 end
