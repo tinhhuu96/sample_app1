@@ -35,10 +35,12 @@ en:
   pls_login: "Please log in."
   up_profile: "Profile updated"
   error_login: "Invalid email/password combination"
-  create_user_success: "Welcome to the Sample App!"
+  pls_check_mail: "Please check your email to activate your account."
   not_load_user: "can not load user !"
   not_delete: "can not delete"
   deleted: "User deleted"
+  ms1: "Account not activated. "
+  ms2: "Check your email for the activation link."
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
@@ -100,3 +102,10 @@ en:
       new_user: "New user?"
       sign_now: "Sign up now!"
       remember: "Remember me on this computer"
+  user_mailer:
+    account_activation:
+      p1: "Welcome to the Sample App! Click on the link below to activate your account:"
+  mailers:
+    user_mailer:
+      activate: "Account activation"
+
