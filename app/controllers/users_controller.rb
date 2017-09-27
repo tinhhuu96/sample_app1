@@ -10,7 +10,8 @@ class UsersController < ApplicationController
     flash[:danger] = t "not_load_user"
     redirect_to root_url
   end
-  def show;end
+
+  def show; end
 
   def index
     @users = User.sort_by_name.paginate(page: params[:page], per_page: Settings.pagination.page)
@@ -23,15 +24,16 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "create_user_success"
-      redirect_to @user
+      @user.send_activation_email
+      UserMailer.account_activation(@user).deliver_now
+      flash[:info] = t "pls_check_mail"
+      redirect_to root_url
     else
       render :new
     end
   end
 
-  def edit;end
+  def edit; end
 
   def update
     if @user.update_attributes user_params
