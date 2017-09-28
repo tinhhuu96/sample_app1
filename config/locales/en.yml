@@ -41,6 +41,11 @@ en:
   deleted: "User deleted"
   ms1: "Account not activated. "
   ms2: "Check your email for the activation link."
+  password_resets_1: "Email sent with password reset instructions"
+  password_resets_2: "Email address not found"
+  password_resets_3: "Password has been reset."
+  password_resets_4: "Password reset has expired."
+  password_resets_er_1: "can't be empty"
   layouts:
     application:
       title: " | Ruby on Rails Tutorial Sample App"
@@ -88,6 +93,7 @@ en:
       h1: "Update your profile"
       change: "change"
       submit: "Save change"
+      confirm: "Confirmation"
     index:
       title: "All users"
     user:
@@ -105,7 +111,21 @@ en:
   user_mailer:
     account_activation:
       p1: "Welcome to the Sample App! Click on the link below to activate your account:"
+    password_reset:
+      p1: "To reset your password click the link below:"
+      p2: "This link will expire in two hours."
+      p3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      h1: "Password reset"
+      p4: "To reset your password click the link below:"
+      p5: "This link will expire in two hours."
+      p6: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
   mailers:
     user_mailer:
       activate: "Account activation"
+  password_resets:
+    new:
+      title: "Forgot password"
+    edit:
+      title: "Reset password"
+      submit: "Update password"
 

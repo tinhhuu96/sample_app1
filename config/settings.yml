@@ -5,6 +5,7 @@ user:
     maximum_length: 255
   password:
     minimum_length: 6
+  time_reset: 2
 session:
   value_checkbox: 1
 gravatar:
@@ -12,3 +13,4 @@ gravatar:
   size_list: 50
 pagination:
   page: 5
+
