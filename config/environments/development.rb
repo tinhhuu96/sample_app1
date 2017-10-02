@@ -28,9 +28,18 @@ Rails.application.configure do
 
   # Don"t care if the mailer can"t send.
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.delivery_method = :test
-  host = "localhost:3000" # Don"t use this literally; use your local dev host instead
-  config.action_mailer.default_url_options = { host: host, protocol: "https" }
+  config.action_mailer.delivery_method = :smtp
+  host = "infinite-tor-69898.herokuapp.com"
+  config.action_mailer.default_url_options = { host: host }
+  ActionMailer::Base.smtp_settings = {
+    :address        => "smtp.sendgrid.net",
+    :port           => "587",
+    :authentication => :plain,
+    :user_name      => ENV["SENDGRID_USERNAME"],
+    :password       => ENV["SENDGRID_PASSWORD"],
+    :domain         => "heroku.com",
+    :enable_starttls_auto => true
+  }
 
   config.action_mailer.perform_caching = false
 
